@@ -1,0 +1,18 @@
+
+@host = http://localhost:3000
+
+GET {{host}}
+
+###
+GET {{host}}/incomes/asd
+
+###
+
+POST {{host}}/incomes
+Content-Type: application/json
+
+{
+    "debtor": 1,
+    "amount": 4.5,
+    "comments": "me page doido"
+}
