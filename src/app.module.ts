@@ -12,6 +12,7 @@ import { IncomesController } from './models/income/incomes.controller';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LoggerMiddleware).forRoutes(IncomesController);
+    //consumer.apply(LoggerMiddleware).forRoutes(IncomesController);
+    consumer.apply(LoggerMiddleware).forRoutes();
   }
 }
